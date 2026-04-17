@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 10px;
+    /* background-color: tomato; */
+    padding-bottom: 10px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline;
+    padding: 20px;
+}
+
+.navbar ul li a, button{
+    text-transform: uppercase;
+    color: gray;
+}
+
+.navbar ul button{
+    border-color: black;
+    padding: 10px 20px;
+}
+
+.navbar ul button a{
+    color: black;
+}
+
+.hero-section{
+    display: flex;
+    background-color: hsl(266, 39%, 16%);
+    padding: 80px 150px;
+    height: 80vh;
+}
+
+.hero-section .hero-text{
+    color: white;
+}
+
+.hero-text hr{
+    width: 20%;
+    margin-bottom: 40px;
+}
+
+.hero-text h1{
+    width: 65%;
+    font-size: 50px;
+}
+
+.hero-text p{
+    width: 85%;
+    margin: 20px 0;
+    color: hsl(0, 0%, 100%);
+    line-height: 1.5;
+}
+
+.hero-text button{
+    background-color: hsl(266, 39%, 16%);
+    border-color: white;
+    padding: 12px 28px;
+}
+
+.hero-text button a{
+    color: white;
+}
+
+.hero-section img{
+    width: 400px;
+    height: 500px;
+}
+
+.section1{
+    padding: 200px 150px;
+}
+
+.divbar1 hr{
+    width: 10%;
+    margin-bottom: 30px;
+}
+
+.main-sec{
+    display: flex;
+    padding: 40px 0px;
+    gap: 20px;
+}
+
+.divbar2 img{
+    width: 20%;
+}
+
+.divbar2 h3{
+    margin: 20px 0;
+}
+
+.divbar2 p{
+    color: gray;
+}
+
+.divbar3{
+    display: flex;
+    background-color: hsl(266, 39%, 16%);
+    height: 8%;
+    padding: 20px 20px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.divbar3 h1{
+    color: white;
+    width: 25%;
+}
+
+.divbar3 button{
+    margin-left: 60px;
+    border-color: white;
+    background-color: hsl(266, 39%, 16%);
+}
+
+.divbar3 button a{
+    padding: 10px;
+    color: white;
+}
+
+.footbar{
+    padding: 20px;  
+}
+
+.divbar4{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.divbar4 img{
+    padding-right: 350px;
+}
+
+.divbar5 img{
+    padding: 8px;
+}
+
+.footbar{
+    background-color: rgb(241, 240, 240);
+}
+.footbar hr{
+    margin-left: 140px;
+    margin-right: 150px;
+}
+
+.section2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 40px;
+    margin-right: 60px;
+}
+
+.section2 h3{
+    color: gray;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.section2 ul li{
+    text-decoration: none;
+    list-style: none;
+    padding: 8px;
+}
+
+.section2 ul li a{
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-size: small;
+    
+}
+
+/* media query */
+@media ( max-width: 768px) {
+    .navbar ul li{
+        display: none;
+    }
+
+    .hero-section{
+        flex-direction: column-reverse;
+        padding: 0;
+        height: 100vh;
+    }
+
+    .hero-text h1{
+        width: 100%;
+    }
+
+    .hero-text p{
+        width: 100%;
+    }
+    
+    .hero-section img{
+        height: 400px;
+        width: 400px;
+        padding: 20px;
+    }
+
+    .section1{
+        padding: 0;
+    }
+
+    .divbar1 hr{
+        margin: 40px 150px;
+        width: 20%;
+    }
+
+    .divbar1 h1{
+        text-align: center;
+    }
+
+    .main-sec{
+        flex-direction: column;
+    }
+
+    .divbar2{
+        margin: 30px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .divbar3{
+        flex-direction: column;
+        padding: 0;
+        margin: 0 30px;
+        height: 35vh;
+    }
+
+    .divbar3 h1{
+        width: 65%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .divbar3 button{
+        align-items: center;
+        text-align: center;
+        margin: 20px 40px;
+        padding: 10px;
+    }
+
+    .footbar{
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .divbar4{
+        flex-direction: column;
+        padding: 30px;
+        
+    }
+    .divbar4 img{
+        padding: 10px;
+        align-items: center;
+    }
+
+    .footbar hr{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .section2{
+        flex-direction: column;
+    }
+
+    .section2 h3{
+        margin-top: 30px;
+    }
+}
+
